@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Estudiants connectats</title>
+    <link rel="stylesheet" type="text/css" href="estudiantsConnectatsStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB5yeCrp6RbNwqWV8PkhoSVfMYSjGlkeLQ"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carla Agulló Soler">
+    <script src="estudiantsConnectatsScript.js"></script>
+</head>
+
+<body>
+    <main id="container">
+        <h2 id=componentTitle>Estudiants connectats</h2>
+        <div class="column" id="leftColumn">
+            <div class="flexContainerCentered">
+                <label>Formador:</label>
+                <select id="profesorSelect">
+                    <option value="0">Tots els professors</option>
+                </select>
+            </div>
+            <div id=tableWrapper>
+            <table>
+                <thead>
+                    <th class="head">ID</th>
+                    <th class="head">Nom </th>
+                    <th class="head">Professor</th>
+                    </th>
+                </thead>
+                <tbody id="llistaStudents">
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="column" id="rightColumn">
+            <div class=posicioAlumne>
+                <h3>Localització</h3>
+                <div id="map"></div>
+            </div>
+            <div class="flexContainerCentered">
+                    <div id="imageHolder">
+                        <h5>Sense foto</h5>
+                    </div>
+                </div>
+        </div>
+        <div class="centeredButtons">
+            <button type="button" class="activeButton" onclick="window.location.href='../index.html'">Tornar</button>
+
+        </div>
+        <footer>
+            <span>Developed by Carla Agulló Soler 2019</span>
+        </footer>
+    </main>
+</body>
+
+</html>

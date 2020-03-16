@@ -1,0 +1,391 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:content-box;
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height:1.5;
+    background: linear-gradient(rgb(208, 253, 219), rgb(144, 248, 184));
+    background-attachment: fixed
+}
+
+li{
+    list-style-type: none;
+    font-weight: 600;
+  
+}
+
+button:hover{
+
+    background-color: rgb(208, 255, 98);
+    cursor:pointer;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+
+input, textarea{
+    display:block;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+    width:50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+h2{
+    font-size: 1.5em;
+    margin-top:15px;
+    text-align: center;
+    color:rgb(82, 110, 81);
+    background-color: #b6df9f;
+
+}
+
+header{
+    grid-area: header;
+}
+
+header h1{
+
+    font-size: 3em;
+    text-align: center;
+    margin-bottom:30px;
+    color:rgb(82, 110, 81);
+}
+
+label{
+    display:block;
+    font-weight: 600;
+    color:rgb(82, 110, 81);
+    margin: 20px;
+}
+
+select{
+    display:block;
+    font-weight: 600;
+    color:rgb(82, 110, 81);
+    margin: 20px;
+    width:50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+table{
+    border-spacing: 0;
+    text-align:center;
+    margin: 10px;
+    width: 100%;
+    border-right : 2px solid #ddd;
+}
+
+th{
+   margin-bottom: 5px;
+}
+
+tr:nth-child(even){
+    background-color: rgb(214, 227, 228);
+}
+
+tr{
+
+    margin:5px;
+}
+
+.head:hover{
+    cursor:pointer;
+}
+.newRow:hover {
+    background-color:rgb(157, 227, 235);
+    cursor:pointer;
+
+}
+
+.activeButton{
+    border: 2px solid rgb(60, 75, 63);
+    color:rgb(60, 75, 63);
+    background-color: #b6df9f;
+    padding: 10px 32px;
+    font-weight:600;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+
+    margin-bottom: 10px;
+}
+
+.buttonisOn{
+    background-color: rgb(208, 255, 98);
+}
+
+ .centeredButtons{
+  
+    text-align: center;
+    grid-area: centeredButtons;
+    background-color: rgb(224, 241, 243);
+    box-shadow: 8px 10px rgb(159, 184, 164);
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+
+}  
+
+.hiddenButton{
+    visibility: hidden;
+    text-align: center;
+    grid-area: centeredButtons;
+    background-color: rgb(224, 241, 243);
+    box-shadow: 8px 10px rgb(159, 184, 164);
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+
+}  
+
+.participants{
+  height: 15vh;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 2%;
+background-color: rgb(214, 227, 228);
+   width:90%;
+    overflow-y: scroll;
+    
+}
+
+#hiddenWrap{
+    margin-bottom: 10px;
+
+    
+}
+.column{
+
+ background-color: rgb(224, 241, 243);
+ box-shadow: 8px 10px rgb(159, 184, 164); 
+
+
+}
+
+.hiddenDiv{
+    visibility:hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.formadorWrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column h2{
+
+    font-size: 1.5em;
+    text-align:center;
+    margin-bottom: 15px;
+    color:rgb(82, 110, 81);
+    background-color: #b6df9f;
+}
+
+.inactiveButton{
+
+    border: 2px solid rgb(60, 75, 63);
+    color:rgb(60, 75, 63);
+    background-color: #838383;
+    padding: 10px 32px;
+    font-weight:600;
+    text-align: center;
+    text-decoration: line-through;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+
+}
+
+.centeredButton{
+    display:flex;
+    justify-content: center;
+}
+
+.inactiveButton:hover{
+
+    cursor:not-allowed;
+}
+
+
+.nouFormadorDisplay{
+
+    border: 1px solid #ccc;
+    margin:10px;
+    border-radius: 2%;
+}
+
+.selectedRow{
+    background-color:rgb(157, 227, 235) !important;
+    cursor:pointer;
+}
+.index{
+    text-decoration: underline;
+    margin:5px;
+    background-color: rgb(224, 241, 243);
+}
+
+.index:hover{
+    cursor:pointer;
+}
+
+.activeIndex{
+    text-decoration: underline;
+    margin:5px;
+    background-color:rgb(157, 227, 235);
+}
+
+.activeIndex{
+cursor:pointer;
+}
+
+#paginacion{
+    text-align:center;
+}
+
+#leftColumn{
+
+    grid-area:leftColumn;
+   
+}
+
+#componentTitle{
+    grid-area:componentTitle;
+}
+
+#nouFormador{
+    margin:10px 10px;
+}
+
+.selectedRow{
+    background-color:rgb(150, 227, 235);
+}
+
+#rightColumn{
+    
+    grid-area:rightColumn;
+    
+
+}
+        /* COMPUTER */
+@media screen and (min-width:1100px){
+
+ main{
+
+    width:90%;
+    max-width:1000px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto; 
+    margin: 0 auto;
+}
+
+#container{
+    grid-template-areas:
+    "header header"
+    "componentTitle componentTitle"
+     "leftColumn rightColumn"
+     "centeredButtons centeredButtons"
+     "footer footer"
+}
+} 
+        /*TABLET*/
+@media screen and (max-width:1100px){
+    main{
+        width:90%;
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto; 
+        margin: 0 auto;
+    }
+    
+    #container{
+        grid-template-areas:
+            "header header"
+            "componentTitle componentTitle"
+            "leftColumn rightColumn"
+            "centeredButtons centeredButtons"
+            "footer footer";
+    }
+
+    header h1{
+        font-size:1.75em;
+    }
+}
+        /*PHONE*/
+@media screen and (max-width:500px){
+
+    main{
+        width:90%;
+        max-width: 450px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto 10vh;
+       
+        margin: 0 auto;
+    }
+    
+    #container{
+        grid-template-areas:
+            "header"
+            "componentTitle"
+            "leftColumn"
+            "rightColumn"
+            "centeredButtons"
+            "footer";
+
+    }
+
+    .column{
+
+        background-color: rgb(224, 241, 243); 
+        box-shadow:none;
+       }
+
+       .centeredButtons{
+  
+        text-align: center;
+        grid-area: centeredButtons;
+        background-color: rgb(224, 241, 243);
+        box-shadow: none;
+        border-bottom-left-radius: 2%;
+        border-bottom-right-radius: 2%;
+    
+    } 
+    
+    .activeButton{
+        border: 2px solid rgb(60, 75, 63);
+        color:rgb(60, 75, 63);
+        background-color: #b6df9f;
+        padding: 5px 16px;
+        font-size: .8rem;
+        margin-bottom: 5px;
+    }
+    
+    .inactiveButton{
+        padding: 5px 16px;
+
+        font-size: .8rem;
+        margin-bottom: 5px;
+    
+    }
+}   
+    

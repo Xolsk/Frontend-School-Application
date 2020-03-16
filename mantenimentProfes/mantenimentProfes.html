@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Pla 7</title>
+    <link rel="stylesheet" type="text/css" href="mantenimentProfesStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carla Agulló Soler">
+    <script src="mantenimentProfesScript.js"></script>
+</head>
+
+<body>
+    <main id="container">
+        <h2 id=componentTitle>Manteniment Professors</h2>
+        <div class="column" id="leftColumn">
+            <table >
+                <thead>
+                <th class="head" onclick="sortTable(0)" id=idProfe>ID <span class="arrow" id=arr0>&#x25BC</span></th>
+                <th class="head"onclick="sortTable(1)" id=nomProfe>Nom <span class="arrow" id=arr1> </span></th>
+                <th class="head"onclick="sortTable(2)" id=tipusProfe>Tipus <span class="arrow" id=arr2> </span></th>
+                </thead>
+                <tbody id="llistaProfes">
+
+                </tbody>
+            </table>
+            <div id="paginacion"></div>
+        </div>
+        <div class="column" id="rightColumn">
+            <div class=nouFormadorDisplay>
+                <form id="nouFormador">
+                    <label>Nom:</label>
+                    <input type="text" placeholder="Nom i Cognom" id="nom">
+                    <label>Usuari:</label>
+                    <input type="text" placeholder="Nom de l'usuari" id="usuari">
+                    <label>Email:</label>
+                    <input type="email" placeholder="Direcció de correu electrònic" id="email">
+                    <label>Tipus:</label>
+                    <select id="tipus">
+                        <option id="tc" value="TC">Formador</option>
+                        <option id="ad" value="AD">Administrador</option>
+                    </select>
+                    <span id="idKeeper" display="hidden"></span>
+                    <label>Centre:</label>
+                    <select id="colegio">
+                        <option value="null">Sense Centre Assignat</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="centeredButtons">
+            <button type="button" class="activeButton" onclick="window.location.href='../index.html'">Tornar</button>
+            <button  onclick="modificarFormador()" type="button" disabled class="inactiveButton" id="modificarFormador">Modificar Formador</button>
+            <button  onclick="eliminarFormador()" type="button" disabled class="inactiveButton" id="eliminarFormador">Eliminar Formador</button>
+            <button onclick="window.location.href='./nouFormador/nouFormador.html'"class="activeButton" id="nouFormador">Nou Formador</button>
+        </div>
+        <footer>
+            <span>Developed by Carla Agulló Soler 2019</span>
+        </footer>
+    </main>
+</body>
+
+</html>

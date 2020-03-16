@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Manteniment Estudiants</title>
+    <link rel="stylesheet" type="text/css" href="mantenimentEstudiantsStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carla Agulló Soler">
+    <script src="mantenimentEstudiantsScript.js"></script>
+</head>
+
+<body>
+    <main id="container">
+        <h2 id=componentTitle>Manteniment Estudiants</h2>
+        <div class="column" id="leftColumn">
+            <div class="flexContainerCentered">
+                <label>Formador:</label>
+                <select id="profesorSelect">
+                    <option value="0">Tots els professors</option>
+                </select>
+            </div>
+            <table>
+                <thead>
+                    <th class="head" id=idProfe>ID <span class="arrow" id=arr0></span></th>
+                    <th class="head" id=nomProfe>Nom <span class="arrow" id=arr1> </span></th>
+                    <th class="head" id=tipusProfe>Professor <span class="arrow" id=arr2> </span></th>
+                </thead>
+                <tbody id="llistaStudents">
+
+                </tbody>
+            </table>
+            <div id="paginacion"></div>
+        </div>
+        <div class="column" id="rightColumn">
+            <div class=rightDisplay>
+                <form id="nouStudent">
+                    <div class="flexContainerCentered">
+                        <label>Nom:</label>
+                        <input required type="text" placeholder="Nom i Cognom" id="nom">
+                    </div>
+                    <div class="flexContainerCentered">
+                        <label>Usuari:</label>
+                        <input required type="text" placeholder="Nom de l'usuari" id="usuari">
+                    </div>
+                    <div class="flexContainerCentered">
+                        <label>Email:</label>
+                        <input required type="email" placeholder="Direcció de correu electrònic" id="email">
+                    </div>
+                    <div class="flexContainerCentered">
+                        <div id="imageHolder">
+                            <h5>Sense foto</h5>
+                        </div>
+                    </div>
+                    <div class="flexContainerCentered">
+                        <input type="file" id="photo" accept="image/*">
+                        <label id="photoButton" class="fotoButton" for="photo">Afegir fotografia</label>
+                       
+                    </div>
+                    <div class="flexContainerCentered">
+                        <label>Formador:</label>
+                        <select id="formadorSelectGrups">
+                            <option value="0">Tots els professors</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="flexContainerCentered">
+                        <label>Afegir a: </label>
+                        <select id="grupSelect">
+                            <option value="0">Selecciona un grup</option>
+                        </select>
+                    </div>
+                    <div id="hiddenDiv" class="flexContainerCentered hidden">
+                        <label>Participa als grups:</label>
+                        <select size="3" id="grupsList">
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="flexContainerCentered">
+                        <button type="button" id="clearFormButton" class="activeButton">Netejar Formulari</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="centeredButtons">
+            <button type="button" class="activeButton" onclick="window.location.href='../index.html'">Tornar</button>
+            <button type="submit" disabled class="inactiveButton sw" id="modificarStudent">Modificar Estudiant</button>
+            <button type="button" disabled class="inactiveButton sw" id="eliminarStudent">Eliminar Estudiant</button>
+            <button type="submit" class="activeButton" id="addStudent">Nou Estudiant</button>
+        </div>
+        <footer>
+            <span>Developed by Carla Agulló Soler 2019</span>
+        </footer>
+    </main>
+</body>
+
+</html>

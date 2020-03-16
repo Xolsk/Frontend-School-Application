@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Pla 8</title>
+    <link rel="stylesheet" type="text/css" href="mantenimentCentresStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carla Agulló Soler">
+    <script src="mantenimentCentresScript.js"></script>
+</head>
+
+<body>
+    <main id="container">
+        <h2 id=componentTitle>Manteniment Centres</h2>
+         <table id=mainTable>
+            <thead>
+                <th>Id </span></th>
+                <th >Centre</th>
+                <th></th>
+            </thead>
+             <tbody id="llistaCentres">
+                 <tr>
+                     <td>--</td>
+                     <td><form>
+                            <div class="inputWrapper">
+                            <input oninput="validateCenter()" id="nouCentreInput">
+                            </div >
+                            </form>
+                       </td>
+                      <td class="centeredButtons">
+                          <button id="newCenterButton" onclick="crearCentre()"  disabled type="button" class="inactiveButton">AFEGIR</button>
+                         
+                      </tr>
+                 </tr>
+                
+            </tbody>
+        </table>
+<div class="buttonSection">
+    <button type="button" class="activeButton" onclick="window.location.href='../index.html'">Tornar</button>
+</div>
+        <footer>
+            <span>Developed by Carla Agulló Soler 2019</span>
+        </footer>
+    </main>
+</body>
+
+</html>

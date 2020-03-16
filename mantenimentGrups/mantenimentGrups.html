@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Pla 8</title>
+    <link rel="stylesheet" type="text/css" href="mantenimentGrupsStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carla Agulló Soler">
+    <script src="mantenimentGrupsScript.js"></script>
+</head>
+
+<body>
+    <main id="container">
+        <h2 id=componentTitle>Manteniment Grups</h2>
+        <div class="column" id="leftColumn">
+            <div class="formadorWrapper">
+                <label>Formador:</label>
+                <form id="profeForm">
+                    <select id="profeSelect">
+                    </select>
+                </form>
+            </div>
+            <table>
+                <thead>
+                    <th class="head"  id=idGrup>ID <span class="arrow" id=arr0></span></th>
+                    <th class="head"  id=nomGrup>Nom <span class="arrow" id=arr1> </span></th>
+                    <th class="head"  id=partiGrup>Participants <span class="arrow" id=arr2>
+                        </span></th>
+                </thead>
+                <tbody id="llistaGrups">
+                </tbody>
+            </table>
+        </div>
+        <div class="column" id="rightColumn">
+            <div class=nouGrupDisplay>
+                <form id="nouGrup">
+                    <label>Nom:</label>
+                    <input type="text" placeholder="Nom del grup" id="nomGrupForm">
+                    <label>Descripció:</label>
+                    <textarea placeholder="Descripció" id="desc"></textarea>
+                    <label>Formador:</label>
+                    <input readonly type="text" placeholder="Nom del formador" id="formador">
+                </form>
+                <div id="hiddenWrap" class="hiddenDiv">
+                    <div class="centeredButton">
+                        <button id="participantsButton" class="activeButton">Participants</button>
+                    </div>
+                    <div class="centeredButton">
+                        <div id="participants" class="participants hiddenDiv">
+                       
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="centeredButtons">
+            <button onclick="window.location.href='../index.html'" type="button" class="activeButton"
+                onclick="window.location.href='../index.html'">Tornar</button>
+            <button type="button" disabled class="inactiveButton" id="modificarGrup">Modificar Grup</button>
+            <button type="button" disabled class="inactiveButton" id="eliminarGrup">Eliminar Grup</button>
+            <button class="activeButton" id="afegirGrup">Nou Grup</button>
+        </div>
+        <footer>
+            <span>Developed by Carla Agulló Soler 2019</span>
+        </footer>
+    </main>
+</body>
+
+</html>

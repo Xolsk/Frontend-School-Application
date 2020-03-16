@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Pla 7</title>
+    <link rel="stylesheet" type="text/css" href="nouFormadorstyles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carla Agulló Soler">
+    <script src="nouFormadorscript.js"></script>
+</head>
+
+<body>
+    <main id="container">
+        .<h2>Alta Formadors</h2>
+        <section id="column" class="column">
+            
+            <form name="nouUsuari" id="formAlta">
+                <div>
+                    <label>Nom i cognom:</label>
+                    <input name="nomiCognom" type="text" id="nomiCognom" required>
+                </div>
+                <div>
+                    <label>Correu electrònic:</label>
+                    <input name="correu" type="email" id="correu" required>
+                </div>
+                <div>
+                    <label> Nom d'usuari:</label>
+                    <input name="nomUsuari" type="text" id="nomUsuari" required>
+                </div>
+                <div>
+                    <label>Contrassenya:</label>
+                    <input name="contrassenya" type="password" id="contrassenya" required>
+                    <span id="eye" onclick="switchPass('')">&#128065;</span>
+                </div>
+                <div>
+                <label>Confirma contrassenya:</label>
+                <input name="contrassenyaConfirm" type="password" id="contrassenyaConfirm">
+                </div>
+                <div class="buttonDisplay">
+                    <button onclick="window.location.href='../mantenimentProfes.html'" type="button" class="activeButton" id="enrere">Tornar</button>
+                    <button disabled type="submit" class="inactiveButton" id="enviar">Enviar</button>
+                </div>
+            </form>
+            <p id="validaCorreu">El correu ha de ser vàlid.</p>
+            <p id="validaPass">És necessari que la contrassenya tingui 6 caràcters mínim i tingui un mínim de un número
+                i una lletra majúscula. </p>
+            <p id="passMatch">Verifiqui que les contrassenyes concorden.</p>
+            <p>Tots els camps són obligatoris.</p>
+        </section>
+
+        <footer>
+            <span>Developed by Carla Agulló Soler 2019</span>
+        </footer>
+    </main>
+</body>
+
+</html>
